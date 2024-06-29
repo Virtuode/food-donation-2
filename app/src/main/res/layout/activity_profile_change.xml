@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".activities.ProfileChangeActivity">
+
+    <!-- Toolbar with back button -->
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#2C2C2C"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:tint="#ffffff" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Profile"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <!-- Profile Picture and Edit Icon -->
+    <RelativeLayout
+        android:id="@+id/profile_picture_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            app:civ_border="false"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_edit_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/profile_image"
+            android:layout_alignEnd="@id/profile_image"
+            android:layout_marginBottom="-10dp"
+            app:srcCompat="@drawable/ic_camera"
+            style="@style/CustomFabStyle"
+            app:useCompatPadding="true" />
+
+
+    </RelativeLayout>
+
+    <!-- Profile Details -->
+    <LinearLayout
+        android:id="@+id/profile_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_picture_container"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#212121">
+
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#b0b0b0"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHEHZAD"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_marginEnd="60dp"
+            android:paddingTop="4dp" />
+
+
+        <ImageView
+            android:id="@+id/iv_edit_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="-30dp"
+            android:src="@drawable/ic_editz"
+            android:padding="5dp"
+
+            app:tint="@color/green" />
+
+        <TextView
+            android:id="@+id/about_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textColor="#b0b0b0"
+            android:paddingTop="8dp" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

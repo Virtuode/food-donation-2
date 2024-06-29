@@ -1,0 +1,29 @@
+<!-- res/values-night/styles.xml -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Codinger" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Ensure consistent bottom navigation style -->
+        <item name="bottomNavigationStyle">@style/BottomNavigationViewStyle</item>
+    </style>
+
+    <style name="BottomNavigationViewStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconSize">24dp</item>
+        <item name="itemTextAppearanceActive">@style/BottomNavigationTextStyle</item>
+        <item name="itemTextAppearanceInactive">@style/BottomNavigationTextStyle</item>
+        <item name="itemIconTint">@color/bottom_nav_item_color</item>
+        <item name="itemTextColor">@color/bottom_nav_item_color</item>
+        <item name="elevation">8dp</item>
+        <item name="itemHorizontalTranslationEnabled">false</item>
+    </style>
+
+    <style name="BottomNavigationTextStyle">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomFabStyle">
+        <item name="fabSize">mini</item>
+        <item name="android:padding">4dp</item>
+        <item name="backgroundTint">@color/design_default_color_primary</item>
+        <item name="android:tint">@android:color/white</item>
+    </style>
+</resources>

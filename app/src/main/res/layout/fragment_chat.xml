@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnDonateNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Donate Now"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginEnd="24dp"/>
+
+    <Button
+        android:id="@+id/btnSelfDonate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Self Donate"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_marginBottom="86dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginEnd="24dp"/>
+
+    <Button
+        android:id="@+id/btnHelpDonate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Help Donate"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_marginBottom="146dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginEnd="24dp"/>
+</RelativeLayout>

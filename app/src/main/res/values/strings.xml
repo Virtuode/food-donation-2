@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Codinger</string>
+    <string name="default_web_client_id">399762857473-asmhunlpvealf4hoinmsel48q0uol9id.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="facebook_app_id">1146924223214411</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+    <string name="navigation_drawer_open">open_drawer</string>
+    <string name="navigation_drawer_close">close_drawer</string>
+
+
+</resources>

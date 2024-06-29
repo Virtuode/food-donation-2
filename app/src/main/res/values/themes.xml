@@ -1,0 +1,81 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Codinger" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+        <style name="LoginTheme" parent="Theme.AppCompat.Light.NoActionBar">
+            <item name="android:windowBackground">@color/background_color</item>
+            <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+            <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        </style>
+
+    <style name="LoginTextInput" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@drawable/rounded_edittext</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+        <style name="LoginButton" parent="Widget.AppCompat.Button">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:backgroundTint">@color/colorPrimary</item>
+            <item name="android:textColor">@android:color/white</item>
+            <item name="android:padding">16dp</item>
+            <item name="background">@drawable/rounded_button_with_shadow</item>
+            <item name="android:textAllCaps">false</item>
+            <item name="android:layout_marginTop">16dp</item>
+            <item name="android:textSize">16sp</item>
+        </style>
+
+        <style name="LoginSocialButton" parent="Widget.AppCompat.ImageButton">
+            <item name="android:layout_width">48dp</item>
+            <item name="android:layout_height">48dp</item>
+            <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+            <item name="android:padding">8dp</item>
+        </style>
+
+        <style name="SignUpText">
+            <item name="android:textColor">@color/colorPrimary</item>
+            <item name="android:layout_marginTop">24dp</item>
+            <item name="android:textSize">14sp</item>
+        </style>
+
+
+
+    <style name="BottomNavigationViewStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconSize">24dp</item>
+        <item name="itemTextAppearanceActive">@style/BottomNavigationTextStyle</item>
+        <item name="itemTextAppearanceInactive">@style/BottomNavigationTextStyle</item>
+        <item name="itemIconTint">@color/bottom_nav_item_color</item>
+        <item name="itemTextColor">@color/bottom_nav_item_color</item>
+        <item name="elevation">8dp</item>
+        <item name="itemHorizontalTranslationEnabled">false</item>
+    </style>
+
+    <style name="BottomNavigationTextStyle">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomFabStyle">
+        <item name="fabSize">mini</item>
+        <item name="android:padding">4dp</item>
+        <item name="backgroundTint">@color/design_default_color_primary</item>
+        <item name="android:tint">@android:color/white</item>
+    </style>
+
+
+    <!-- Splash Theme -->
+
+
+
+    <style name="Theme.Codinger" parent="Base.Theme.Codinger" />
+</resources>
