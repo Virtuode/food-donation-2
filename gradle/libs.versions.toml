@@ -1,54 +1,101 @@
 [versions]
 agp = "8.4.1"
+android = "10.3.0"
 androidImageCropper = "2.8.0"
 androidImageCropperVersion = "4.5.0"
+androidSdk = "10.0.2"
+annotation = "10.3.0"
 circularimageview = "4.3.1"
 compiler = "4.12.0"
 facebookAndroidSdk = "latest.release"
 firebaseAuthVersion = "23.0.0"
 firebaseBom = "33.1.1"
+githubAutoimageslider = "1.4.0"
 glide = "4.16.0"
 glideVersion = "4.16.0"
+imageslideshowVersion = "0.1.2"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
 appcompat = "1.7.0"
+mapboxAndroidAccounts = "0.7.0"
+mapboxAndroidPluginAnnotationV9 = "0.9.0"
+mapboxAndroidPluginAnnotationV9Version = "0.8.0"
+mapboxAndroidSdk = "9.7.1"
+mapDisplay = "1.7.2"
 material = "1.12.0"
 activity = "1.9.0"
 constraintlayout = "2.1.4"
 googleGmsGoogleServices = "4.4.2"
 firebaseAuth = "23.0.0"
+navigationFragmentKtx = "2.7.7"
 playServicesAuth = "21.2.0"
 firebaseDatabase = "21.0.0"
+playServicesLocation = "21.3.0"
+playServicesMaps = "19.0.0"
+providerAndroid = "1.7.2"
+routePlannerOnline = "1.7.2"
+sdkMaps = "2.7.1"
 ucrop = "2.2.6"
 viewpager2 = "1.1.0"
 firebaseStorage = "21.0.0"
 recyclerview = "1.3.2"
+playServicesNearby = "19.3.0"
+transportApi = "3.2.0"
 
 [libraries]
+android = { module = "com.mapbox.maps:android", version.ref = "android" }
 android-image-cropper = { module = "com.theartofdev.edmodo:android-image-cropper", version.ref = "androidImageCropper" }
+android-sdk = { module = "org.maplibre.gl:android-sdk", version.ref = "androidSdk" }
+annotation = { module = "com.mapbox.plugin:annotation", version.ref = "annotation" }
 circularimageview = { module = "com.mikhaellopez:circularimageview", version.ref = "circularimageview" }
 compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compiler" }
+denzcoskun-imageslideshow = { module = "com.github.denzcoskun:ImageSlideshow", version.ref = "imageslideshowVersion" }
 facebook-android-sdk = { module = "com.facebook.android:facebook-android-sdk", version.ref = "facebookAndroidSdk" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+github-autoimageslider = { module = "com.github.smarteist:autoimageslider", version.ref = "githubAutoimageslider" }
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
-glide-v4120 = { module = "com.github.bumptech.glide:glide", version.ref = "glideVersion" }
+
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+map-display = { module = "com.tomtom.sdk.maps:map-display", version.ref = "mapDisplay" }
+mapbox-android-accounts = { module = "com.mapbox.mapboxsdk:mapbox-android-accounts", version.ref = "mapboxAndroidAccounts" }
+mapbox-android-plugin-annotation-v9 = { module = "com.mapbox.mapboxsdk:mapbox-android-plugin-annotation-v9", version.ref = "mapboxAndroidPluginAnnotationV9" }
+mapbox-android-plugin-annotation-v9-v080 = { module = "com.mapbox.mapboxsdk:mapbox-android-plugin-annotation-v9", version.ref = "mapboxAndroidPluginAnnotationV9Version" }
+mapbox-android-sdk = { module = "com.mapbox.mapboxsdk:mapbox-android-sdk", version.ref = "mapboxAndroidSdk" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 #noinspection SimilarGradleDependency
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationFragmentKtx" }
 play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
+play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
+provider-android = { module = "com.tomtom.sdk.location:provider-android", version.ref = "providerAndroid" }
+provider-api = { module = "com.tomtom.sdk.location:provider-api", version.ref = "providerAndroid" }
+provider-gms = { module = "com.tomtom.sdk.location:provider-gms", version.ref = "providerAndroid" }
+provider-proxy = { module = "com.tomtom.sdk.location:provider-proxy", version.ref = "providerAndroid" }
+provider-simulation = { module = "com.tomtom.sdk.location:provider-simulation", version.ref = "providerAndroid" }
+route-planner-online = { module = "com.tomtom.sdk.routing:route-planner-online", version.ref = "routePlannerOnline" }
+sdk-geofencing = { module = "com.tomtom.online:sdk-geofencing", version.ref = "sdkMaps" }
+sdk-maps = { module = "com.tomtom.online:sdk-maps", version.ref = "sdkMaps" }
+sdk-maps-rx-extensions = { module = "com.tomtom.online:sdk-maps-rx-extensions", version.ref = "sdkMaps" }
+sdk-maps-ui-extensions = { module = "com.tomtom.online:sdk-maps-ui-extensions", version.ref = "sdkMaps" }
+sdk-routing = { module = "com.tomtom.online:sdk-routing", version.ref = "sdkMaps" }
+sdk-search = { module = "com.tomtom.online:sdk-search", version.ref = "sdkMaps" }
+sdk-traffic = { module = "com.tomtom.online:sdk-traffic", version.ref = "sdkMaps" }
 ucrop = { module = "com.github.yalantis:ucrop", version.ref = "ucrop" }
 vanniktech-android-image-cropper = { module = "com.vanniktech:android-image-cropper", version.ref = "androidImageCropperVersion" }
 viewpager2 = { module = "androidx.viewpager2:viewpager2", version.ref = "viewpager2" }
 firebase-storage = { group = "com.google.firebase", name = "firebase-storage", version.ref = "firebaseStorage" }
 recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+play-services-nearby = { group = "com.google.android.gms", name = "play-services-nearby", version.ref = "playServicesNearby" }
+transport-api = { group = "com.google.android.datatransport", name = "transport-api", version.ref = "transportApi" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

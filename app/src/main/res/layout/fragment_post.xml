@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PostFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:title="Post Details"
+        android:titleTextColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/postImageView"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/donation_pic"
+        android:background="@drawable/round_textview_background" />
+
+    <ImageButton
+        android:id="@+id/editImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/postImageView"
+        android:layout_alignBottom="@id/postImageView"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_editz" />
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/postImageView"
+        android:layout_margin="16dp"
+        android:hint="Enter description here"
+        android:background="@drawable/rounded_edittext"
+        android:padding="16dp" />
+
+    <ImageButton
+        android:id="@+id/locationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionEditText"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/person_pin"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationButton"
+        android:layout_margin="16dp"
+        android:text="No location selected"
+        android:gravity="center" />
+
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Post"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button_with_shadow"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"/>
+
+
+
+</RelativeLayout>

@@ -73,6 +73,12 @@
     </style>
 
 
+    <style name="CustomBottomSheetDragHandle">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.MaterialComponents.SmallComponent</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.MaterialComponents.BottomSheetDialog</item>
+    </style>
+
+
     <!-- Splash Theme -->
 
 

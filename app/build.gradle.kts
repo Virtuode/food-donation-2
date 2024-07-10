@@ -9,12 +9,20 @@ android {
 
     defaultConfig {
         applicationId = "com.example.codinger"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+    buildTypes.configureEach {
+        buildConfigField("String", "TOMTOM_API_KEY", "\"JvShheAVgqajf6D0tq8irLe2pLFL4DWX\"")
     }
 
     buildTypes {
@@ -31,9 +39,9 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 }
+val tomtomApiKey: String by project
 
 dependencies {
-
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -42,14 +50,29 @@ dependencies {
     implementation(libs.firebase.database)
     implementation(libs.firebase.storage)
     implementation(libs.recyclerview)
+    implementation(libs.play.services.nearby)
+    implementation(libs.transport.api)
     testImplementation(libs.junit)
-    implementation (libs.circularimageview)
-    implementation (libs.glide)
-    annotationProcessor (libs.compiler)
-    implementation (libs.viewpager2)
+    implementation(libs.circularimageview)
+    implementation(libs.glide)
+    annotationProcessor(libs.compiler)
+    implementation(libs.viewpager2)
+    implementation(libs.navigation.fragment.ktx)
+    implementation(libs.navigation.ui.ktx)
+    implementation(libs.denzcoskun.imageslideshow)
     implementation(platform(libs.firebase.bom))
-    implementation (libs.facebook.android.sdk)
-    implementation (libs.play.services.auth)
+    implementation(libs.facebook.android.sdk)
+    implementation(libs.map.display)
+    implementation(libs.provider.android)
+    implementation(libs.provider.gms)
+    implementation(libs.provider.proxy)
+    implementation(libs.provider.api)
+    implementation(libs.route.planner.online)
+    implementation(libs.play.services.maps)
+    implementation(libs.provider.simulation)
+    implementation (libs.play.services.location)
+    implementation(libs.play.services.auth)
+    implementation(libs.play.services.location)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }

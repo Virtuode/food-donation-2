@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.DonationFragment">
+
+    <!-- Top bar with back arrow and title -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donate"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Image Section -->
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/top_bar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image1" />
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/image_view"
+        android:padding="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp">
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:id="@+id/desc_id"
+                android:textSize="18sp"
+                android:layout_marginStart="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/description_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is an example description generated to demonstrate visual appearance look..."
+                android:textSize="14sp"
+                android:layout_marginStart="30dp"
+                android:layout_below="@id/desc_id"
+                android:layout_marginTop="8dp" />
+
+            <!-- Address and location -->
+
+
+                <TextView
+                    android:id="@+id/address_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address: kathiyadwadi street,\n front of union bank, unn, Surat"
+                    android:textSize="14sp"
+                    android:layout_marginStart="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="240dp"
+                    android:layout_gravity="center_vertical" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="220dp">
+
+
+
+                <ImageView
+                    android:id="@+id/loc_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/person_pin"
+                    android:layout_marginStart="8dp"
+                    />
+
+
+
+
+                <ImageView
+                    android:id="@+id/edit_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/pen"
+                    android:layout_below="@id/loc_icon"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center_vertical" />
+            </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity: "
+                    android:id="@+id/quantity"
+                    android:textSize="18sp"
+
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="300dp"/>
+
+                <TextView
+                    android:id="@+id/quantity_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 meal"
+                    android:layout_alignBottom="@id/quantity"
+                    android:layout_toEndOf="@id/quantity"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_vertical" />
+
+
+
+
+            <!-- Progress bar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="360dp"
+                android:elevation="10dp"
+
+                android:id="@+id/lineaer_prog"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/custom_slider_background">
+
+                <SeekBar
+                    android:id="@+id/customSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="50"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:padding="16dp"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/progress_bar_layer"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/thumb_drawable" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

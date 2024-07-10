@@ -1,42 +1,49 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".fragments.ChatFragment">
 
-    <Button
-        android:id="@+id/btnDonateNow"
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp" />
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Donate Now"
-        android:textColor="@color/white"
-        android:background="@drawable/button_background"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="26dp"
-        android:layout_marginStart="250dp"
-        android:layout_marginEnd="24dp"/>
+        android:layout_marginLeft="16dp"
+        android:id="@+id/cardview_click"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
 
-    <Button
-        android:id="@+id/btnSelfDonate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Self Donate"
-        android:textColor="@color/white"
-        android:background="@drawable/button_background"
-        android:layout_alignParentBottom="true"
-        android:visibility="gone"
-        android:layout_marginBottom="86dp"
-        android:layout_marginStart="250dp"
-        android:layout_marginEnd="24dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
-    <Button
-        android:id="@+id/btnHelpDonate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Help Donate"
-        android:textColor="@color/white"
-        android:background="@drawable/button_background"
-        android:layout_alignParentBottom="true"
-        android:visibility="gone"
-        android:layout_marginBottom="146dp"
-        android:layout_marginStart="250dp"
-        android:layout_marginEnd="24dp"/>
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/heart" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Make your contribution now "
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 </RelativeLayout>

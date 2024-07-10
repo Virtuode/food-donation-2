@@ -10,6 +10,7 @@
     <string name="facebook_client_token">56789</string>
     <string name="navigation_drawer_open">open_drawer</string>
     <string name="navigation_drawer_close">close_drawer</string>
+    <string name="maptiler_api_key">xjfdzADaO8iYps8rM9p9</string>
 
 
 </resources>

@@ -96,7 +96,7 @@ public class LoginActivity extends AppCompatActivity {
 
         googleSigninBtn = findViewById(R.id.googleSignUp);
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestIdToken( getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
         gsc = GoogleSignIn.getClient(this,gso);
@@ -191,10 +191,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-    public void signIn() {
-        Intent signInIntent = gsc.getSignInIntent();
-        startActivityForResult(signInIntent,1000);
-    }
+
 
 
 
@@ -218,6 +215,11 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
+    public void signIn() {
+        Intent signInIntent = gsc.getSignInIntent();
+        startActivityForResult(signInIntent,1000);
+    }
+
 
     private void firebaseAuthWithGoogle(String idToken) {
         AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
@@ -228,7 +230,7 @@ public class LoginActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Sign in success
                             FirebaseUser user = mAuth.getCurrentUser();
-                            Log.d(TAG, "signInWithCredential:success");
+                            Toast.makeText(LoginActivity.this, "Sign in successful", Toast.LENGTH_SHORT).show();
                             updateUI(user);
                             // You can now get user info or perform other actions
                         } else {
@@ -294,7 +296,6 @@ public class LoginActivity extends AppCompatActivity {
     private void updateUI(FirebaseUser user) {
         if (user != null) {
             // Navigate to next activity or update UI with user info
-            Toast.makeText(this, "Sign in successful", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(LoginActivity.this,MainActivity.class);
             startActivity(intent);
             finish();
